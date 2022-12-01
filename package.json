@@ -1,0 +1,53 @@
+{
+  "name": "submission-resto-pwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start",
+    "start-dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "serve": "http-server dist",
+    "build-serve": "build serve",
+    "fix": "eslint ./src --fix",
+    "e2e": "codeceptjs run --steps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "babel-loader": "^8.2.5",
+    "codeceptjs": "^3.3.6",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.25.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.1",
+    "jasmine-ajax": "^4.0.0",
+    "jasmine-core": "^4.2.0",
+    "karma": "^5.2.3",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-eslint": "^2.2.0",
+    "karma-jasmine": "^4.0.2",
+    "karma-sourcemap-loader": "^0.3.8",
+    "karma-webpack": "^5.0.0",
+    "puppeteer": "^19.3.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0",
+    "workbox-webpack-plugin": "^6.5.4"
+  },
+  "dependencies": {
+    "idb": "^7.1.0",
+    "regenerator-runtime": "^0.13.9",
+    "workbox-window": "^6.5.4"
+  }
+}
